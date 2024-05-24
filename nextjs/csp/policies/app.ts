@@ -42,6 +42,7 @@ export function app(): CspDev.DirectiveDescriptor {
     ],
 
     'connect-src': [
+      "*",
       KEY_WORDS.SELF,
       ...MAIN_DOMAINS,
 
