@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "./tools/scripts/dev.sh",
-    "dev:preset": "./tools/scripts/dev.preset.sh",
+    "dev:preset": "./tools/scripts/pro.preset.sh",
     "pro:preset": "./tools/scripts/pro.preset.sh",
     "build": "next build",
     "build:docker": "docker build --build-arg GIT_COMMIT_SHA=$(git rev-parse --short HEAD) --build-arg GIT_TAG=$(git describe --tags --abbrev=0) -t blockscout-frontend:local ./",
