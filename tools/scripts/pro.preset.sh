@@ -1,13 +1,12 @@
 #!/bin/bash
 
-# if [ "$#" -ne 1 ]; then
-#   echo "Usage: yarn pro:preset <preset_name>"
-#   exit 1
-# fi
+if [ "$#" -ne 1 ]; then
+  echo "Usage: yarn pro:preset <preset_name>"
+  exit 1
+fi
 
-# preset_name="$1"
-# config_file="./configs/envs/.env.${preset_name}"
-config_file="./configs/envs/.env.base"
+preset_name="$1"
+config_file="./configs/envs/.env.${preset_name}"
 secrets_file="./configs/envs/.env.secrets"
 
 if [ ! -f "$config_file" ]; then
